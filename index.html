@@ -6,6 +6,7 @@
        <meta charset ="utf-8"/>
 	    <link rel="stylesheet" href="normalize.css">
        <link rel="stylesheet" type="text/css" href="style.css">
+       <script src="https://kit.fontawesome.com/98ab6a906d.js" crossorigin="anonymous"></script>
  
        <!--links para les typos-->
        <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,23 +20,27 @@
     <body>
       <header>
          <!--banner-->
+         <banner>
          <div> 
-         <img src="./images/logo/ohmyfood@2x.svg" alt="logo oh my food"></image> 
-         
+            <div id="logo">
+               <img src="./images/logo/ohmyfood@2x.svg" alt="logo oh my food"></image> 
+            </div>
          <!--location-->
+         <div id="location">
          <i class="fa-sharp fa-solid fa-location-dot"></i> <p>Paris, Belleville</p>
          </div>
+         </banner>
          
          <!--callToAction&Nav-->
-         <section class="callToAction">
+         <nav class="callToAction">
             <h1> Réservez le menu qui vous convient</h1>
             <p> Découvrez les restaurants d'exception, séléctionnés par nos soins.</p>
             <button class="btn__explore"> Explorez nos restaurants</button> 
             <!--this type of button will be repeated*/-->
-         </section>
+         </nav>
 
          <!--instructions-->
-         <nav class="Instructions">
+         <section class="instructions">
          <h2>Fonctionnement</h2>
          <button class="btn__instructions">
             <p>1</p>
@@ -49,26 +54,18 @@
          </button>
          <button class="btn__instructions">
             <p>3</p>
-            <i class="fa-sharp fa-solid fa-store">
-            <h3>Dégustez au restaurant</h3>
-            </i></button>
-         </nav>
+            <i class="fa-sharp fa-solid fa-store"></i> 
+            <h3>Degustez au restaurant</h3>
+         </button>
+         </section>
          
       </header>
       <main>
          <h2>Restaurants</h2>
          <div class="card">
+            <a href="menuLaPaletteDuGout.html">
+               <div class="imageCard">
             <img src="./images/restaurants/laPaletteDuGout.jpg" class="resize" alt="photo La Palette Du Gout"/> 
-            <div class="textCard">
-               <h3> La palette du goût</h3>
-               <h4> Ménilmontant</h4>
-               <i class="fa-light fa-heart"></i>
-            </div>
-         </div>
-         <div class="card">
-            <a href="#">
-            <div class="imageCard">
-               <img src="./images/restaurants/laNoteEnchantee.jpg" class="resize" alt="photo La Palette Du Gout"/> 
             </div>
             <div class="textCard">
                <h3> La palette du goût</h3>
@@ -78,9 +75,21 @@
             </a>
          </div>
          <div class="card">
-            <a href="#">
+            <a href="menuLaNoteEnchantee.html">
             <div class="imageCard">
-            <img src="./images/restaurants/aLaFrancaise.jpg" class="resize" alt="photo La Palette Du Gout"/> 
+               <img src="./images/restaurants/laNoteEnchantee.jpg" class="resize" alt="photo la note enchantee"/> 
+            </div>
+            <div class="textCard">
+               <h3> La note enchantée</h3>
+               <h4> Ménilmontant</h4>
+               <i class="fa-light fa-heart"></i>
+            </div>
+            </a>
+         </div>
+         <div class="card">
+            <a href="menuALaFrancaise.html">
+            <div class="imageCard">
+            <img src="./images/restaurants/aLaFrancaise.jpg" class="resize" alt="photo a la francaise"/> 
             </div>
             <div class="textCard">
                <h3> La note enchantée</h3>
@@ -90,9 +99,9 @@
             </a>
          </div>
          <div class="card">
-            <a href="#">
+            <a href="menuLeDeliceDesSens.html">
             <div class="imageCard">
-            <img src="./images/restaurants/leDeliceDesSens.jpg" class="resize" alt="photo La Palette Du Gout"/>
+            <img src="./images/restaurants/leDeliceDesSens.jpg" class="resize" alt="photo le delice des sens"/>
             </div> 
             <div class="textCard">
                <h3> Le délice des sens</h3>
@@ -104,13 +113,13 @@
          </div>
       </main>
       <footer>
+         <div id="footerText">
             <img src="./images/logo/ohmyfood@2x.svg">
             <i class="fa-solid fa-utensils"></i>
             <i class="fa-solid fa-handshake-angle"></i>
             <p>Mentions légales</p>
             <p>Contact</p>
-         
-
+         </div>
       </footer>
 
     </body>
