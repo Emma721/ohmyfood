@@ -1,36 +1,35 @@
 <!DOCTYPE html> 
 <html lang="en">
-
     <head>
        <title>ohmyfood</title>
        <meta charset ="utf-8"/>
 	    <link rel="stylesheet" href="normalize.css">
        <link rel="stylesheet" type="text/css" href="style.css">
        <script src="https://kit.fontawesome.com/98ab6a906d.js" crossorigin="anonymous"></script>
- 
+       <meta name="viewport" content="width=device-width, initial-scale=1">
        <!--links para les typos-->
+       
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-
     </head>
     <body>
-      <header>
+
          <!--banner-->
-         <banner>
+      <banner>  
          <div> 
             <div id="logo">
                <img src="./images/logo/ohmyfood@2x.svg" alt="logo oh my food"></image> 
             </div>
          <!--location-->
          <div id="location">
-         <i class="fa-sharp fa-solid fa-location-dot"></i> <p>Paris, Belleville</p>
+            <i class="fa-sharp fa-solid fa-location-dot"></i> <p>Paris, Belleville</p>
          </div>
-         </banner>
-         
+      </banner>
+      <header>
          <!--callToAction&Nav-->
          <nav class="callToAction">
             <h1> Réservez le menu qui vous convient</h1>
@@ -38,7 +37,6 @@
             <button class="btn__explore"> Explorez nos restaurants</button> 
             <!--this type of button will be repeated*/-->
          </nav>
-
          <!--instructions-->
          <section class="instructions">
          <h2>Fonctionnement</h2>
@@ -62,65 +60,102 @@
       </header>
       <main>
          <h2>Restaurants</h2>
-         <div class="card">
+         <div class="cards">
             <a href="menuLaPaletteDuGout.html">
-            <div class="imageCard">
-               <img src="./images/restaurants/laPaletteDuGout.jpg" class="resize" alt="photo La Palette Du Gout"/> 
-            </div>
-            <div class="textCard">
-               <h3> La palette du goût</h3>
-               <h4> Ménilmontant</h4>
-               <i class="fa-light fa-heart"></i>
+            <div class="card">
+               <div class="imageCard">
+                  <img id=lapalettedugout src="./images/restaurants/laPaletteDuGout.jpg"
+                  class="resize" alt="photo La Palette Du Gout"/> 
+                     <div class="nouveau">
+                     <p>Nouveau</p>
+                     </div>
+               </div>
+            <div class="cardContainer">
+               <div class="textCard">
+                  <h3> La palette du goût</h3>
+                  <h4> Ménilmontant</h4>
+               </div>
+               <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
             </div>
             </a>
          </div>
          <div class="card">
             <a href="menuLaNoteEnchantee.html">
             <div class="imageCard">
-               <img src="./images/restaurants/laNoteEnchantee.jpg" class="resize" alt="photo la note enchantee"/> 
+               <img id="lanoteenchantee" src="./images/restaurants/laNoteEnchantee.jpg" 
+               class="resize" alt="photo la note enchantee"/> 
+                  <div class="nouveau">
+                  <p>Nouveau</p>
+                  </div>
             </div>
-            <div class="textCard">
-               <h3> La note enchantée</h3>
-               <h4> Ménilmontant</h4>
-               <i class="fa-light fa-heart"></i>
+            <div class="cardContainer">
+               <div class="textCard">
+                  <h3> La note enchantée</h3>
+                  <h4> Ménilmontant</h4>
+               </div>
+               <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
             </div>
             </a>
          </div>
          <div class="card">
             <a href="menuALaFrancaise.html">
             <div class="imageCard">
-            <img src="./images/restaurants/aLaFrancaise.jpg" class="resize" alt="photo a la francaise"/> 
+            <img id="alafrancaise" src="./images/restaurants/aLaFrancaise.jpg" class="resize" alt="photo a la francaise"/> 
             </div>
-            <div class="textCard">
-               <h3> La note enchantée</h3>
-               <h4> Cité Rouge</h4>
-               <i class="fa-light fa-heart"></i>
+            <div class="cardContainer">
+               <div class="textCard">
+                  <h3> A la française</h3>
+                  <h4> Cité Rouge</h4>
+               </div>
+               <div class="">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
             </div>
             </a>
          </div>
          <div class="card">
             <a href="menuLeDeliceDesSens.html">
             <div class="imageCard">
-            <img src="./images/restaurants/leDeliceDesSens.jpg" class="resize" alt="photo le delice des sens"/>
-            </div> 
-            <div class="textCard">
-               <h3> Le délice des sens</h3>
-               <h4> Folie-Méricourt</h4>
-               <!--maybe close the div here and do a new one for the heart ( and same for other cards)-->
-               <i class="fa-light fa-heart"></i>
+            <img id=ledelicedessens src="./images/restaurants/leDeliceDesSens.jpg" class="resize" alt="photo le delice des sens"/>
+            </div>
+            <div class="cardContainer">
+               <div class="textCard">
+                  <h3> Le délice des sens</h3>
+                  <h4> Folie-Méricourt</h4>
+               </div>
+               <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+               </div>
             </div>
             </a>
          </div>
-      </main>
+  
+
       <footer>
          <div id="footerText">
-            <img src="./images/logo/ohmyfood@2x.svg">
-            <i class="fa-solid fa-utensils"></i>
-            <i class="fa-solid fa-handshake-angle"></i>
-            <p>Mentions légales</p>
+            <!--<img src="./images/logo/ohmyfood@2x.svg">-->
+            <a href="#" aria-label="cutlery" >
+               <h2>ohmyfood</h2>
+               <p><i class="fa-solid fa-utensils"></i> 
+               Proposer un restaurant</p>
+            </a>
+            <a href="#" aria-label="handshake">
+            <p><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</p>
+            </a>
+            <a href="#" >
+            <p>Mentions légales</p> 
+            </a>
+            <a href="#">
             <p>Contact</p>
+            </a>
          </div>
       </footer>
+   
+   </main>
 
-    </body>
-    </html>
+</body>
+</html>
