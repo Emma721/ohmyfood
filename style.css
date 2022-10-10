@@ -1,14 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 /*genereal*/
+
+#spinner {
+    left:50%;
+    position: absolute;
+    text-align:center;
+    top:50%;
+    background-color:white;
+    border-radius: ;
+
+}
+
+
 html {
     height:100%;
+    width:100%;
+}
+
+main {
+    height:100%;
+    width:100vh;
 }
 
 h1 {
-    font-family: 'Shrikhand', sans-serif; 
+    font-family: 'Roboto', sans-serif; 
 }
 
 *{
@@ -29,14 +47,32 @@ h1 {
 }
 
 
-p,h2,h3,h2{
+p,h2,h3,h2,h3{
     font-family: 'Roboto', sans-serif; 
+    font-weight:400;
 }
 
+h4{
+    font-weight:400;
+}
 p {
     font-weight: 600;
+    margin:auto;    
 }
 
+.callToAction p{
+    margin-bottom: 10px;
+    font-weight:400;
+}
+
+.instructions h2 {
+    font-weight: 900;
+    display:flex;
+}
+
+main h2 {
+    padding-top:20px;
+}
 
 body {
     display: flex;
@@ -52,35 +88,92 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
-    row-gap: 20px;
-    background-color: #f6f6f7;
+}
+
+.banner{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    align-self:center;
+    justify-content: center;
 }
 
 #logo {
-    display: block;
+    /*display: inline-block;
     margin: auto;
-    width: 50%;
+    width: 50%;*/
 
+    font-size: 20px;
+    flex-basis: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+   
+}
+
+#logo img {
+    display: flex;
+    margin: 0 0 0 10px;
+    width: 167px;
+    justify-content: start;
+    margin:auto;
+    padding:1%;
+}
+
+
+.goBack {
+    font-size: 20px;
+    flex-basis: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.goBack i {
+        padding-left: 1%;
+        text-decoration:none;
+        color:black;
+        font-size:30px;
 }
 
 .callToAction {
     padding: 30px 20px 30px 20px;
 }
 
-#location{
+#locationBackground{
     display:flex;
-    flex-direction:row;
     justify-content:center;
-    background-color: lightgrey;
+    background-color: #eaeaea;
     gap:10px;
     height: 50px;
-    width:100%;
+    align-items: center;
+    margin:auto;
+    justify-content: start;
+}
+
+#location{
+        display:flex;
+        justify-content:center;
+        background-color: #eaeaea;
+        gap:10px;
+        height: 50px;
+        align-items: center;
+        margin:auto;
+        width: 150px;
+        justify-content: start;
+
+}
+
+#location p {
+    margin-left: 0;
+    text-align:center;
+    align-items: center;
 }
 
 #location i {
     display:flex;
     align-items:center;
+   
     
 }
 
@@ -91,25 +184,43 @@ header{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    margin: 15px;
-    margin-right: 10px;
+    margin-left: 5%;
+    margin:20px;
+    background-color: white;
 }
 
 .btn__instructions {
     display: flex;
     align-items: center;
-    background-color: #f6f6f7;
+    background-color: #f6f6f6;
     border-radius: 20px;
     cursor: pointer;
     height: 65px;
     position: relative;
     border: 0;
-    box-shadow: 1px 1px 1px 1px lightgrey;
+    
+    
+
+}
+
+
+.btn__instructions:hover {
+    display: flex;
+    align-items: center;
+    background-color: #f5edff;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 65px;
+    position: relative;
+    border: 0;
+    
+    
+
 }
 
 .btn__instructions p {
     position: absolute;
-    left: -9px;
+    left: -3px;
     width: 20px;
     height: 17px;
     border-radius: 20px;
@@ -132,7 +243,29 @@ header{
     color: gray;
 }
 
+.btn__explore {
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    border:none;
+    filter: brightness (0);
+    border-radius: 20px 20px  20px  20px ; 
+    color:white;
+    background-color: #FF79DA;
+    background: linear-gradient(350deg, #9356DC , #FF79DA );
+    box-shadow: 0px 10px 13px -7px rgb(0 0 0 / 39%);
 
+}
+
+.btn__explore :focus {
+    content: "";
+    width: 110%;
+    height: 400px;
+    filter: brightness (1);
+    
+}
 
 /*MAIN*/
 /*-------------------------------------------------*/
@@ -145,6 +278,7 @@ main{
     padding: 10px;
     margin-bottom: 0px;
     margin:0;
+    background-color: #f6f6f6;
    
 
 }
@@ -153,6 +287,7 @@ main{
 main h2 {
     margin-left: 10px;
     margin:0;
+    padding-left: 0px;
 }
 
 
@@ -167,6 +302,9 @@ main h2 {
     
 }
 
+.textCard h3{
+    font-weight:900;
+}
 
 .card {
     display:flex;
@@ -174,7 +312,7 @@ main h2 {
     flex-wrap:wrap;
     border-radius:10px;
     height: 250px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 black;
     contain: content;
 
   
@@ -197,22 +335,65 @@ main h2 {
 .card .imagecard {
     display: flex;
     flex-direction: row;
-    position: relative; /*pq pones posicion relativa aqui?*/
+    position: relative;
 
 }
 
 .heart {
+    position:relative;
+}
+
+/*the div of hearts*/
+.heart, .fa-heart{
    margin: 5%;
+   position:absolute;
+   font-size: 20px;
+   right:8px;
+   top: 90px;
    
 }
 
-.heart i {
-    font-size: 20px;
+.heart .fa-solid{
+    background:linear-gradient(350deg, #9356DC 25%, #FF79DA 65%);
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   
+
 }
 
 
 
 
+.fa-regular {
+    background: white;
+    z-index: 1;
+}
+
+.heart .fa-regular:hover {
+    opacity: 0;
+    }
+
+
+    /*wanted to change the heart that is in all secondary pages
+.secondaryheart, #secondaryHeartRegular{
+        margin: 5%;
+        position:absolute;
+        font-size: 20px;
+        right:8px;
+        top: 10px;
+        
+}
+ 
+#secondaryHeartSolid{
+    background:linear-gradient(350deg, #9356DC 25%, #FF79DA 65%);
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+*/
 .card .imagecard {
     display: flex;
     flex-direction: row;
@@ -223,17 +404,23 @@ main h2 {
     flex-direction: column;
     justify-content: stretch;
     margin:0;
+   
 }
 
+.nouveau {
+    position: absolute; 
+    background-color: #99E2D0;
+    color: #278870;
+    right: 15px;
+    top: 15px;
+    border-radius: 2px;
+    padding:0 10px 0 10px;
+    
+}
 
-
-
-
-
-
-
-
-
+.nouveau p {
+    margin:4px;
+}
 
 
 /*FOOTER*/
@@ -246,7 +433,7 @@ footer {
     padding: 15px;
     width: 100%;
     margin: 0 -8px 0 -8px;
-    
+    margin-top: 5%;   
     
 }
 
@@ -277,33 +464,958 @@ footer h2 {
     letter-spacing: 1px;
     font-size: 32px;
     margin: 10px 0 10px 0;
+    padding: 0;
 }
 
 
-@media all and (min-width:320 ) and(max-width:480){
+/*------------------*/
 
-    .resize{
-        height: 292px;
-        width: 170;
+/*css secondary pages*/
+
+/*html {
+    height:100vh;
+}*/
+
+p {
+    font-weight: 600;
+    margin:auto;
+    
 }
+
+#lapalettedugout {
+    width: 102%;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0px -5px 0px -5px;
+    }
+
+#lanoteenchantee {
+    width: 102%;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0px -5px 0px -5px;
+}
+
+
+#ledelicedessens {
+    width: 102%;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0px -5px 0px -5px;
+}
+
+#alafrancaise{
+    width: 102%;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0px -5px 0px -5px;
+}
+
+
+main {
+    position: relative;
+    background-color: #f6f6f6;
+    border-radius: 30px 30px 0px 0px;
+    margin: -30px -5px 0px -5px;
+    padding-bottom: 1px;
+    width:100%;
+    height:100%;
+    gap:40px;
+}
+
+.underlineBox  {
+    border-bottom: 4px solid #99E2D0;
+    width:6%;
+   
+}
+
+h2{
+    margin-bottom: 0px;
+    font-weight: 900;
+}
+
+
+h3 {
+    margin-bottom:1%;
+    margin-top:0px;
+
+    
+}
+
+/* --------------HEADER--------------- */
+
+
+.banner {
+    display:flex;
+    flex-direction:column;
+}
+
+.goBack i {
+    font-size: 50px;
+
+    display: flex;
+    justify-content: start;
+    align-self: center;
+}
+
+
+
+
+#banner {
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+    padding:1%;
+
+}
+
+
+#imgLogoSecond{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    
+}
+
+
+
+
+
+/* -----------ENTREES---------------- */
+#entrees {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 15px;
+    margin-right: 10px;
+   
+
+}
+
+
+.secondaryHeart {
+    position: relative
+}
+
+
+ /*need to determine the size and position of the heart  */
+
+.secondaryHeart i {
+    font-size: 44px;
+    right: 63px;
+    top:30px;
+    background-color: #f6f6f6;
+}
+
+.secondaryHeart i .fa-heart {
+    font-size: 44px;
+    right: 63px;
+    top:30px;
+    background-color: #f6f6f6;
+}
+
+.secondaryHeart i .fa-solid {
+    font-size: 44px;
+    right: 63px;
+    top:30px;
+    background-color: #f6f6f6;
+    background: linear-gradient(350deg, #9356DC 25%, #FF79DA 65%);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+.mealsTitle {
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+.mealsTitle h1 {
+    margin-top: 22px;
+    font-size: 29px;
+    margin-left: 15px;
+    font-size:50px;
+}
+
+
+.mealCard {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    height: 100px;
+    box-shadow: 0px 0px 6px 4px rgb(218 218 218 / 91%);
+    overflow: hidden;
+    flex-basis: 100%;
+    cursor: pointer;
+ 
+    
+}
+
+.mealDescription2 {
+    width: 500px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left:-6px;
+    
+}
+    
+    .price  {
+        font-weight: 900;
+        margin-top: 54px;
+        margin-right: 20px;
+        margin-left:50%;
+        
+    }
+
+    .price2  {
+        font-weight: 900;
+        margin-top: 54px;
+        margin-right: 20px;
+        margin-left:50%;
+        
+    }
+    
+    .mealCard h3  {
+        font-size: 20px;
+        margin: 25px 0 10px 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 900;
+        margin-top:0;
+       
+    }
+   
+    .mealCard p  {
+        font-size: 17px;
+        margin: 10px 0 10px 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 500;
+       
+    }
+
+   
+    .circleCheck  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #99E2D0;
+        color: white;
+        font-size: 25px;
+        width: 0px;
+        padding-top: 10px;  
+        animation: checked 2s ease-in-forwards;
+        
+        
+ }
+
+    
+ .circleCheck2  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #99E2D0;
+    color: white;
+    font-size: 25px;
+    width: 0px;
+    padding-top: 10px;  
+    animation: checked 2s ease-in-forwards;
+   
+
+ }
+
+
+/* ------------------------------------ */
+#plats {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 15px;
+    margin-right: 10px;
+}
+
+
+
+/* ------------------------------------ */
+#desserts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 15px;
+    margin-right: 10px;
+}
+
+
+
+.btn__commander{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 40px 40px 40px 40px;
+    background-color: #FF79DA;
+    background: linear-gradient(350deg, #9356DC , #FF79DA );
+    box-shadow: 0px 10px 13px -7px rgb(0 0 0 / 39%);
+    border: none;
+}
+
+.btn__commander p {
+    color: white;
+    font-size: 12px;
+    padding-top: 3px;
+    padding:20px;
+    font-size:25px;
+    
+}
+
+
+
+
+/*----------ANIMATIONS-------*/
+.btn__commander {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 40px 40px 40px 40px;
+    background-color: #FF79DA;
+    background: linear-gradient(350deg, #9356DC , #FF79DA );
+    box-shadow: 10px 20px 20px -20px black;
+    border: none;
+
+}
+
+.btn__commander:hover {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 40px 40px 40px 40px;
+    background-color: #f191d6;
+    background: linear-gradient(330deg, #f05bc6 , #f78ad8  );
+    transition: 0.4s all fordwards;
+    border: none;
+    box-shadow: 0px 20px 20px -20px rgb(0 0 0 / 39%);
+
+}
+
+
+.btn__explore {
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    filter: brightness (0.5);
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    background-color: #FF79DA;
+    background: linear-gradient(350deg, #9356DC , #FF79DA );
+    box-shadow: 0px 10px 13px -7px rgb(0 0 0 / 39%);
+    transition: 0.4s all fordwards;
+
+ }
+
+
+ 
+
+
+ .btn__explore:hover {
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    filter: brightness (0.5);
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    background-color: #f191d6;
+    background: linear-gradient(330deg, #f05bc6 , #f78ad8  );
+    box-shadow: 10px 20px 20px -20px black;
+
+ }
+
+
+@-webkit-keyframes fade-in-up {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+        opacity:50%;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+ 
+
+
+#entrees {
+    -webkit-animation: 1s ease-out fade-in-up;
+    animation:1s ease-out fade-in-up;
+}
+
+#plats {
+    -webkit-animation: 2s ease-out fade-in-up;
+    animation:2s ease-out fade-in-up;
+}
+
+#desserts {
+    -webkit-animation: 3s ease-out fade-in-up;
+    animation:3s ease-out fade-in-up;
+}
+
+
+/*initial value*/
+.circleCheck {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #99e2d0;
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;  
+    width:0px;   
+    transition: all 0.3s ease-in-out;
+    transition-delay: 400ms;
+    }
+
+/*final value with the elemnt declencheur and the
+property */
+.mealCard:hover .circleCheck { 
+    transition: all 0.3s ease-out;
+    width:130px;
+    transform: rotate (360)  ;
+    color:red;
+   
+}
+
+/*heart*/
+
+.solidHeart{
+    background:linear-gradient(350deg, #9356DC , #FF79DA );
+    background-clip:text;
+    background-size: 0px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: 1s ease-out heart-fill forwards;
+    animation:1s ease-out heart-fill forwards;
+
+}
+
+.solidHeart:hover{
+    background:linear-gradient(350deg, #9356DC , #FF79DA );
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: 1s ease-out heart-fill forwards;
+    animation:1s ease-out heart-fill forwards;
+
+}
+
+@-webkit-keyframes heart-fill {
+    0% {
+        transform: scale(0);
+        background-size:0;
+        opacity:0%;
+    }
+
+    30%{
+        transform: scale(0.3%);
+        background: 30%;
+        opacity:30%;
+    }
+
+    50%{
+        transform: scale(0.5);
+        background-size:50%;
+        opacity:50%; 
+    }
+
+    100%{
+        transform: scale(1);
+        background-size:0;
+        opacity:100%;
+    }
+
+ }
+
+@keyframes heart-fill {
+    0% {
+        transform: scale(0);
+        background-size:0;
+        opacity:0%;
+    }
+
+    30%{
+        transform: scale(0.3%);
+        background: 30%;
+        opacity:30%;
+    }
+
+    50%{
+        transform: scale(0.5);
+        background-size:50%;
+        opacity:50%; 
+    }
+
+    100%{
+        transform: scale(1);
+        background-size:0;
+        opacity:100%;
+    }
+
+}
+
+
+  
+    /*----------MEDIA QUERIES-------*/
+
+
+
+@media (min-width:768px )and (max-width:875px ) {
+
+    
+    /* for the main page */
+
+    
+    .main {
+        position: relative;
+        background-color: #f6f6f6;
+        border-radius: 30px 30px 0px 0px;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+ 
+    }
+
+    
+main h2 {
+    padding-left: 1%;
+}
+    .instructions {
+        display:flex;
+        align-items:center;
+        height: 116px;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .instructions h2 {
+        margin-right: 5%;
+    }
+
+     .cards{
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+        margin:0;
+
+
+    }
 
     .card {
-        height:292px;
-        width:250px;
+        display: flex;
+        width:30%; 
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        gap: 10%;
     }
+
+ 
+    .mealCard {
+        display: flex;
+        width: 300px; 
+        flex-direction: row;
+        flex-wrap:wrap;
+        gap: 10%;
+    }
+
+    .card a {
+        text-decoration: none;
+        color: black;
+        width: 261px;
+    }
+
+
+
+
+/* secondary page*/
+
+
+#entrees, #plats, #desserts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 15px;
+    padding-top: 0px;
+
+}
+
+.mealDescription {
+    width: 260px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -6px;
+}
+
+#menu {
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+
 }
 
 
-@media all and (min-width:481 ) and(max-width:768){
-    
+.mealDescription2{
+    max-width: 192px;
+}
+
+.mealCard {
+    display: flex;
+    width: 300px; 
+    flex-direction: column;
+    flex-wrap:wrap;
+    gap: 10%;
 }
 
 
-@media all and (min-width:769) and(max-width:1024){
-    
+.mealCard h3 {
+    font-weight:900;
+}
+
+ 
+
+ .underlineBox {
+    border-bottom: 4px solid #99E2D0;
+    width: 6%;
 }
 
 
-@media all and (min-width:1025) and(max-width:1200){
+.price2  {
+        font-weight: 900;
+        margin-top: 54px;
+        margin-right: 20px;
+        margin-left:-10%;
+        
+    }
+
+
+.circleCheck2 {
     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #99e2d0;
+    color: white;
+    font-size: 25px;
+    padding-top: 76px;  
+    width:0px;   
+    transition: all 0.3s ease-in-out;
+    transition-delay: 400ms;
+    }
+
+
+    .mealCard h3 {
+        margin: 7px 0 10px 15px;
+    }
+
+
+    
+ 
+
+
+
+/*final value with the elemnt declencheur and the
+property */
+.mealCard:hover .circleCheck2 { 
+    transition: all 0.3s ease-out;
+    width: 232px;
+    transform: rotate (360)  ;
+    transform: translateX(-30px);
+    color:red;
+    transform-origin: 50% 0;
+   
+}
+ 
+ }
+
+@media (min-width:875px )and (max-width:1323px ) {
+
+    
+    .main {
+        position: relative;
+        background-color: #f6f6f6;
+        border-radius: 30px 30px 0px 0px;
+        margin: -29px -1px 9px 16px;
+        padding-bottom: 1px;
+        width: 100%;
+        height: 100%;
+        gap: 40px;
+    }
+
+    main h2 {
+        padding-left: 1%;
+    }
+
+    .card {
+        display: flex;
+        width:20%; 
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        gap: 10%;
+    }
+
+    .cards{
+        display: flex;
+        width: 90%; 
+        flex-wrap:wrap;
+        flex-direction: row;
+       justify-content: flex-start;
+        justify-content: space-between;
+        margin: 0;
+
+    }
+
+    .btn__instructions {
+        justify-content: space-between;
+    }
+
+    
+.heart, .fa-heart {
+            margin: 5%;
+            position: absolute;
+            font-size: 20px;
+            right: -3px;
+            top: 100px;
+    }
+
+
+    /* secondary */
+
+    .mealCard:hover .circleCheck2 { 
+        transition: all 0.3s ease-out;
+        width: 150px;
+        transform: rotate (360)  ;
+        transform: translateX(25px);
+        color:red;
+        transform-origin: 50% 0;
+       
+    }
+
+    #entrees, #plats, #desserts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 15px;
+        padding-top: 0px;
+    
+    }
+
+    .mealDescription2 {
+        width: 260px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: -6px;
+    }
+    
+    #menu {
+        display: flex;
+        flex-direction:row;
+    
+    }
+    
+    
+    .mealDescription2{
+        max-width: 192px;
+    }
+    
+    .mealCard {
+        display: flex;
+        width: 300px; 
+        flex-direction: column;
+        flex-wrap:wrap;
+        gap: 10%;
+    }
+    
+    
+    .mealCard h3 {
+        font-weight:900;
+    }
+    
+     
+    
+     .underlineBox {
+        border-bottom: 4px solid #99E2D0;
+        width: 6%;
+    }
+    
+    .price2  {
+        font-weight: 900;
+        margin-top: 54px;
+        margin-right: 20px;
+        margin-left:25%;
+        
+    }  
+
+}
+
+/* bigdesktop */
+@media (min-width:1324px )and (max-width:3000px ) {
+    .card {
+        display: flex;
+        width:16%; 
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        gap: 10%;
+        
+     
+    }
+
+    .cards{
+        display: flex;
+        width: 90%; 
+        flex-wrap:wrap;
+        flex-direction: row;
+       justify-content: flex-start;
+       margin:0;
+       justify-content: space-between;
+    
+   
+
+    }
+
+    main h2 {
+        padding-left: 1%;
+    }
+
+    .heart, .fa-heart {
+        margin: 5%;
+        position: absolute;
+        font-size: 20px;
+        right: -4px;
+        top: 100px;
+}
+
+/* secondary pages */
+
+.backGroundImage {
+    height: 142px;
+}
+
+#menu {
+    display: flex;
+    flex-direction:row;
+
+}
+
+
+.mealCard:hover .circleCheck2 { 
+    transition: all 0.3s ease-out;
+    width: 150px;
+    transform: rotate (360)  ;
+    transform: translateX(25px);
+    top: 50px;
+    color:red;
+    transform-origin: 50% 0;
+   
+}
+
+
+#entrees, #plats, #desserts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 15px;
+    padding-top: 0px;
+
+}
+
+.mealDescription {
+    width: 260px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -6px;
+}
+
+#menu {
+    display: flex;
+    flex-direction:row;
+
+}
+
+
+.mealDescription2{
+    max-width: 192px;
+}
+
+.mealCard {
+    display: flex;
+    width: 300px; 
+    flex-direction: column;
+    flex-wrap:wrap;
+    gap: 10%;
+}
+
+
+.mealCard h3 {
+    font-weight:900;
+}
+
+ 
+
+ .underlineBox {
+    border-bottom: 4px solid #99E2D0;
+    width: 6%;
+}
+
+.price2  {
+    font-weight: 900;
+    margin-top: 54px;
+    margin-right: 20px;
+
+    
+    
+}
+
 }

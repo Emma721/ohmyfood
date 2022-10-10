@@ -6,7 +6,8 @@
 	    <link rel="stylesheet" href="normalize.css">
        <link rel="stylesheet" type="text/css" href="style.css">
        <script src="https://kit.fontawesome.com/98ab6a906d.js" crossorigin="anonymous"></script>
-       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="viewport" content="width=device-width, initial-scale=1 user scalable=no">
+       
        <!--links para les typos-->
        
        <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,8 @@
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    </head>
+       <link rel="stylesheet" href="style.css" />
+      </head>
     <body>
 
          <!--banner-->
@@ -25,8 +27,10 @@
                <img src="./images/logo/ohmyfood@2x.svg" alt="logo oh my food"></image> 
             </div>
          <!--location-->
-         <div id="location">
+         <div id="locationBackground">
+            <div id="location">
             <i class="fa-sharp fa-solid fa-location-dot"></i> <p>Paris, Belleville</p>
+               </div>
          </div>
       </banner>
       <header>
@@ -64,7 +68,7 @@
             <a href="menuLaPaletteDuGout.html">
             <div class="card">
                <div class="imageCard">
-                  <img id=lapalettedugout src="./images/restaurants/laPaletteDuGout.jpg"
+                  <img src="./images/restaurants/laPaletteDuGout.jpg"
                   class="resize" alt="photo La Palette Du Gout"/> 
                      <div class="nouveau">
                      <p>Nouveau</p>
@@ -77,6 +81,7 @@
                </div>
                <div class="heart">
                   <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
                </div>
             </div>
             </a>
@@ -84,7 +89,7 @@
          <div class="card">
             <a href="menuLaNoteEnchantee.html">
             <div class="imageCard">
-               <img id="lanoteenchantee" src="./images/restaurants/laNoteEnchantee.jpg" 
+               <img src="./images/restaurants/laNoteEnchantee.jpg" 
                class="resize" alt="photo la note enchantee"/> 
                   <div class="nouveau">
                   <p>Nouveau</p>
@@ -97,6 +102,7 @@
                </div>
                <div class="heart">
                   <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
                </div>
             </div>
             </a>
@@ -104,15 +110,16 @@
          <div class="card">
             <a href="menuALaFrancaise.html">
             <div class="imageCard">
-            <img id="alafrancaise" src="./images/restaurants/aLaFrancaise.jpg" class="resize" alt="photo a la francaise"/> 
+            <img src="./images/restaurants/aLaFrancaise.jpg" class="resize" alt="photo a la francaise"/> 
             </div>
             <div class="cardContainer">
                <div class="textCard">
                   <h3> A la française</h3>
                   <h4> Cité Rouge</h4>
                </div>
-               <div class="">
+               <div class="heart">
                   <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
                </div>
             </div>
             </a>
@@ -120,7 +127,7 @@
          <div class="card">
             <a href="menuLeDeliceDesSens.html">
             <div class="imageCard">
-            <img id=ledelicedessens src="./images/restaurants/leDeliceDesSens.jpg" class="resize" alt="photo le delice des sens"/>
+            <img src="./images/restaurants/leDeliceDesSens.jpg" class="resize" alt="photo le delice des sens"/>
             </div>
             <div class="cardContainer">
                <div class="textCard">
@@ -129,11 +136,13 @@
                </div>
                <div class="heart">
                   <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
                </div>
             </div>
             </a>
          </div>
-  
+      </div>
+  </main>
 
       <footer>
          <div id="footerText">

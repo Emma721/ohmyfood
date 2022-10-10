@@ -1,141 +1,196 @@
 <!DOCTYPE html> 
 <html lang="en">
     <head>
-        <title>menuALaFrancaise</title>
+        <title>menuLaPaletteDuGout</title>
         <meta charset ="utf-8"/>
          <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
-     </head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="https://kit.fontawesome.com/98ab6a906d.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1 user scalable=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">  
+</head>
      <body>
         <header>
             <!--banner-->
-            <banner>
-                <div>
-                    <img src="./images/logo/ohmyfood@2x.svg" alt="photo logo oh my food"/> 
-                </div>
-                <div class="goBack" a href="index.html">
+            <div id="banner">
+                <a href="index.html" class="goBack">
                     <i class="fa-sharp fa-solid fa-arrow-left"></i>
-                </div>
+                </a>
+              
+                    <img id="imgLogoSecond" src="./images/logo/ohmyfood@2x.svg" alt="photo logo oh my food"/> 
+               
                     <img src="aLaFrancaise.jpg"/>
-            </banner>
-            <!--should I had a div?-->
-            <img src="images/restaurants/aLaFrancaise.jpg" alt="photo a la francaise">
+            </div>
+            <div class="backgroundImage">
+                <img id="alafrancaise" src="images/restaurants/aLaFrancaise.jpg" alt="photo a la francaise">
+            </div>
+
         </header>
-        <main>
-            <title>Entrées</title>
-<div class="menuMealCard">
-    <div class=" meal">
-        <h3>Tartare de poulpe acidulé</h3>
-        <p>Aux zestes d'orange</p>
+<main>
+    <div class="mealsTitle">
+        <h1>A la française</h1>
+    <div class="secondaryHeart">
+        <i id=secondaryHeartRegular class="fa-regular fa-heart"></i>
+        <i id=secondaryHeartSolid class="fa-solid fa-heart"></i>
     </div>
-    <div class="price">
-        <strong>25€</strong>
     </div>
-    <div class="circleCheck">
-    <i class="fa-sharp fa-solid fa-circle-check"></i>
+    <section id="entrees">
+        <div class="underlineBox">
+        <h2>Entrées</h2>
+        </div>
+    <div class="mealCard">
+        <div class=" mealDescription">
+            <h3>Tartare de poulpe acidulé</h3>
+            <p>Aux zestes d'orange</p>
+        </div>
+        <div class="price">
+            25€
+        </div>
+        <div class="circleCheck">
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
+        </div>
     </div>
-</div>
-<div class="menuMealCard">
-    <div class=" meal">
+<div class="mealCard">
+    <div class=" mealDescription">
         <h3>Velouté de légumes d'antan</h3>
         <p>Carotte, panais, topinambour</p>
     </div>
     <div class="price">
-        <strong>35€</strong>
+        35€
     </div>
     <div class="circleCheck">
         <i class="fa-sharp fa-solid fa-circle-check"></i>
     </div>
 </div>
-<div class="menuMealCard">
-    <div class=" meal"></div>
+<div class="mealCard">
+    <div class=" mealDescription">
         <h3>Soupe à l'oignon</h3>
         <p>Revisitée</p>
     </div>
     <div class="price">
-        <strong>20€</strong>
+        20€
     </div>
     <div class="circleCheck">
         <i class="fa-sharp fa-solid fa-circle-check"></i>
-<title>Plats</title>
-<div class="menuMealCard">
-    <div class=" meal"></div>
+    </div>
+</div>
+</section>
+<section id="plats">
+    <div class="underlineBox">
+    <h2>Plats</h2>
+    </div>
+<div class="mealCard">
+    <div class=" mealDescription">
         <h3>Coquilles Saint-Jacques</h3>
         <p>Accompagnées d'une purée de panais</p>
     </div>
     <div class="price">
-        <strong>40€</strong>
+        40€
     </div>
-<div class="menuMealCard">
-    <div class=" meal"></div>
+    <div class="circleCheck">
+        <i class="fa-sharp fa-solid fa-circle-check"></i>
+    </div>
+</div>
+<div class="mealCard">
+    <div class=" mealDescription">
         <h3>Magret de canard</h3>
         <p>Et parmentier de pommes de terre</p>
     </div>
     <div class="price">
-        <strong>35€</strong>
+        35€
     </div>
-<div class="menuMealCard">
-    <div class=" meal"></div>
+    <div class="circleCheck">
+        <i class="fa-sharp fa-solid fa-circle-check"></i>
+    </div>
+    </div>
+<div class="mealCard">
+    <div class=" mealDescription">
         <h3>Pigeonneau d’Ille-et-Vilaine</h3>
         <p>Sur son lit de gnocchis aux légumes</p>
     </div>
     <div class="price">
-        <strong>44€</strong>
+        44€
     </div>
     <div class="circleCheck">
         <i class="fa-sharp fa-solid fa-circle-check"></i>
-<article id="desserts">
-<title>Desserts</title>
-<div class="menuMealCard">
-    <h3>Pétales de violettes glacés</h3>
-    <p>Et purée de noisettes</p>
-<div class="price">
-    <strong>18€</strong>
+    </div>
 </div>
-<div class="circleCheck">
-    <i class="fa-sharp fa-solid fa-circle-check"></i>
-</div>
-</div>
-<div class="menuMealCard">
+</section>
+<section id="desserts">
+    <div class="underlineBox">
+    <h2>Desserts</h2>
+    </div>
+    <div class="mealCard">
+        <div class=" mealDescription">
+            <h3>Pétales de violettes glacés</h3>
+            <p>Et purée de noisettes</p>
+        </div>
+        <div class="price">
+            18€
+        </div>
+        <div class="circleCheck">
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
+        </div>
+    </div>
+<div class="mealCard">
+    <div class=" mealDescription">
     <h3>Fondant au chocolat</h3>
     <p>Revisité</p>
 </div>
 <div class="price">
-    <strong>22€</strong>
+    22€
 </div>
 <div class="circleCheck">
     <i class="fa-sharp fa-solid fa-circle-check"></i>
 </div>
-<div class="menuMealCard">
+</div>
+<div class="mealCard">
+    <div class=" mealDescription">
     <h3>Millefeuille croustillant</h3>
     <p>Myrtilles et pâte d’amande</p>
 </div>
 <div class="price">
-    <strong>23€</strong>
+    23€
 </div>
 <div class="circleCheck">
     <i class="fa-sharp fa-solid fa-circle-check"></i>
+    </div>
+</div>
+   
 
                 <button class="btn__commander">
                     <p>Commander</p>
                 </button>
                 
-        </article>
-    </main>
+            </section>
 
         <footer>
-            <img src="./images/logo/ohmyfood@2x.svg">
-            <i class="fa-solid fa-utensils"></i>
-            <i class="fa-solid fa-handshake-angle"></i>
-            <p>Mentions légales</p>
-            <p>Contact</p>
-         
-
-      </footer>
-    </body>
-
-
-
-
-
-</html>
+            <div id="footerText">
+               <!--<img src="./images/logo/ohmyfood@2x.svg">-->
+               <a href="#" aria-label="cutlery" >
+                  <h2>ohmyfood</h2>
+                  <p><i class="fa-solid fa-utensils"></i> 
+                  Proposer un restaurant</p>
+               </a>
+               <a href="#" aria-label="handshake">
+               <p><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</p>
+               </a>
+               <a href="#" >
+               <p>Mentions légales</p> 
+               </a>
+               <a href="#">
+               <p>Contact</p>
+               </a>
+            </div>
+         </footer>
+         </main>
+        </body>
+        </html>
