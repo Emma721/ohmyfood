@@ -12,9 +12,7 @@ html,body
     padding: 0px;
     overflow-x: hidden; 
 }
-*{
-    outline: 2px solid yellow;
-}
+
 
 #spinner {
     left:50%;
@@ -304,7 +302,7 @@ main{
 
 main h2 {
     margin-left: 10px;
-    margin:0;
+    margin-left:20px;
     padding-left: 0px;
 }
 
@@ -361,16 +359,11 @@ main h2 {
 .heart {
     position:relative;
 }
+/*heart*/
+
 
 /*the div of hearts*/
-.heart, .fa-heart{
-   margin: 5%;
-   position:absolute;
-   font-size: 20px;
-   right:8px;
-   top: 90px;
-   
-}
+
 
 .heart .fa-solid{
     background:linear-gradient(350deg, #9356DC 25%, #FF79DA 65%);
@@ -381,9 +374,6 @@ main h2 {
 
 }
 
-
-
-
 .fa-regular {
     background: white;
     z-index: 1;
@@ -392,6 +382,52 @@ main h2 {
 .heart .fa-regular:hover {
     opacity: 0;
     }
+
+/* -------------- */
+
+    
+    .secondaryHeart {
+        position: relative;
+        left: 40px;
+    }
+    
+    
+     /*need to determine the size and position of the heart  */
+    
+    .secondaryHeart i {
+        font-size: 44px;
+        right: 63px;
+        top:30px;
+        background-color: #f6f6f6;
+    }
+    
+    
+.secondaryHeart .fa-solid{
+    background:linear-gradient(350deg, #9356DC 25%, #FF79DA 65%);
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.secondaryHeart .fa-regular:hover {
+    opacity: 0;
+    }
+  
+    .heart .fa-regular:hover {
+        opacity: 0;
+        }
+   
+        .fa-regular {
+            background: white;
+            z-index: 1;
+        }
+
+
+
+
+
+
+
 
 
     wanted to change the heart that is in all secondary pages
@@ -620,39 +656,6 @@ h3 {
 }
 
 
-.secondaryHeart {
-    position: relative;
-    left: 40px;
-}
-
-
- /*need to determine the size and position of the heart  */
-
-.secondaryHeart i {
-    font-size: 44px;
-    right: 63px;
-    top:30px;
-    background-color: #f6f6f6;
-}
-
-.secondaryHeart i .fa-heart {
-    font-size: 44px;
-    right: 63px;
-    top:30px;
-    background-color: #f6f6f6;
-}
-
-.secondaryHeart i .fa-solid {
-    font-size: 44px;
-    right: 63px;
-    top:30px;
-    background-color: #f6f6f6;
-    background: linear-gradient(350deg, #9356DC 25%, #FF79DA 65%);
-    -webkit-text-fill-color:transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
 
 .mealsTitle {
     display: flex;
@@ -684,13 +687,24 @@ h3 {
     box-shadow: 0px 0px 6px 4px rgb(218 218 218 / 91%);
     overflow: hidden;
     flex-basis: 100%;
-    cursor: pointer;
- 
-    
+    cursor: pointer;  
+}
+
+
+.mealCard2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    height: 100px;
+    box-shadow: 0px 0px 6px 4px rgb(218 218 218 / 91%);
+    overflow: hidden;
+    flex-basis: 100%;
+    cursor: pointer;  
 }
 
 .mealDescription2 {
-    width: 500px;
+    width: 90%;
     margin-top:10px;
     margin-bottom: 10px;
     margin-left:-6px;
@@ -708,12 +722,23 @@ h3 {
     .price2  {
         font-weight: 900;
         margin-top: 54px;
-        margin-right: 20px;
-        margin-left:50%;
+        float:right;
+    
         
     }
     
     .mealCard h3  {
+        font-size: 20px;
+        margin: 25px 0 10px 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 900;
+        margin-top:0;
+       
+    }
+
+    .mealCard2 h3  {
         font-size: 20px;
         margin: 25px 0 10px 15px;
         overflow: hidden;
@@ -734,20 +759,29 @@ h3 {
        
     }
 
+    .mealCard2 p  {
+        font-size: 17px;
+        margin: 10px 0 10px 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 500;
+       
+    }
+
+
    
-    .circleCheck  {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #99E2D0;
-        color: white;
-        font-size: 25px;
-        width: 0px;
-        padding-top: 10px;  
-        animation: checked 2s ease-in-forwards;
-        
-        
- }
+.circleCheck  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #99E2D0;
+    color: white;
+    font-size: 25px;
+    width: 0px;
+    padding-top: 10px;  
+    animation: checked 2s ease-in-forwards;
+}
 
     
  .circleCheck2  {
@@ -958,31 +992,18 @@ property */
    
 }
 
-
-
-/*heart*/
-
-.solidHeart{
-    background:linear-gradient(350deg, #9356DC , #FF79DA );
-    background-clip:text;
-    background-size: 0px;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-animation: 1s ease-out heart-fill forwards;
-    animation:1s ease-out heart-fill forwards;
-
+.mealCard2:hover .circleCheck { 
+    transition: all 0.3s ease-out;
+    width:130px;
+    transform: rotate (45)  ;
+    color:red;
+   
 }
 
-.solidHeart:hover{
-    background:linear-gradient(350deg, #9356DC , #FF79DA );
-    background-clip:text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-animation: 1s ease-out heart-fill forwards;
-    animation:1s ease-out heart-fill forwards;
 
-}
 
+
+/* this is not what makes the heart fill work */
 @-webkit-keyframes heart-fill {
     0% {
         transform: scale(0);
@@ -1042,10 +1063,64 @@ property */
     /*----------MEDIA QUERIES-------*/
 
     @media (min-width:320px )and (max-width:393px )
-    {
+    
+    { 
+
+
+     
+.secondaryHeart {
+    position: relative;
+    left: 15px;
+}
+    
+    
+
+.secondaryHeart .fa-regular {
+    background: white;
+    z-index: 1;
+    position:relative;
+    left:-31px;
+}
+
+.secondaryHeart .fa-regular:hover {
+    opacity: 0;
+    
+
+}
+
+.secondaryHeart i {
+    position: relative;
+    left: -11px;
+    font-size: 20px;
+    top: 25px;
+    float:right;
+}
+
+.secondaryHeart .fa-solid {
+    position:relative;
+    left:-11px;
+}
+
+
+/* -------------- */
+
+    
+    
+     /*need to determine the size and position of the heart  */
+ 
+    
+.secondaryHeart .fa-solid{
+    background:linear-gradient(350deg, #9356DC 25%, #FF79DA 65%);
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
 
         .mealDescription2 {
-            width: 166px;
+            width: 90%;
             margin-top: 10px;
             margin-bottom: 10px;
             margin-left: -6px;
@@ -1057,12 +1132,7 @@ property */
             float:left;
         }
 
-        .mealsTitle .secondaryHeart i {
-            font-size: 20px;
-            top: 25px;
-            float:right;
-            
-        }
+      
 
         .goBack i {
             font-size: 20px;
@@ -1072,8 +1142,8 @@ property */
         .price2 {
             font-weight: 900;
             margin-top: 54px;
-            margin-right:-77px;
-            margin-left: 0%;
+            float:right;
+    
     
          }
 
@@ -1102,13 +1172,25 @@ property */
 .mealCard:hover .circleCheck2 i { 
     transition: all 0.3s ease-out;
     width:130px;
-    rotate(360deg);
+    rotate:(360deg);
     color:red;
     transform-origin: 0% 50%;
     -webkit-animation: 0.4s ease-in-out rotate ;
     animation: 0.4s ease-in-out rotate ;
    
 }
+
+.mealCard2:hover .circleCheck2 i { 
+    transition: all 0.3s ease-out;
+    width:130px;
+    rotate:(360deg);
+    color:red;
+    transform-origin: 0% 50%;
+    -webkit-animation: 0.4s ease-in-out rotate ;
+    animation: 0.4s ease-in-out rotate ;
+   
+}
+
 
 @-webkit-keyframes rotate{
     0% {
@@ -1139,14 +1221,14 @@ property */
     .price2 {
         font-weight: 900;
         margin-top: 54px;
-        margin-right:6px;
-        margin-left: 15%;
+        float:right;
+    
 
      }
 
      
         .mealDescription2 {
-            width: 342px;
+            width: 90%;
             margin-top: 10px;
             margin-bottom: 10px;
             margin-left: -6px;
@@ -1169,6 +1251,41 @@ property */
         float:right;
     }
 
+    .secondaryHeart {
+        position: relative;
+        left: 15px;
+    }
+        
+        
+    
+    .secondaryHeart .fa-regular {
+        background: white;
+        z-index: 1;
+        position:relative;
+        left:-31px;
+    }
+    
+    .secondaryHeart .fa-regular:hover {
+        opacity: 0;
+        
+    
+    }
+    
+    .secondaryHeart i {
+        position: relative;
+        left: -11px;
+        font-size: 20px;
+        top: 25px;
+        float:right;
+    }
+    
+    .secondaryHeart .fa-solid {
+        position:relative;
+        left:-11px;
+    }
+       
+
+
     .goBack i{
         font-size: 30px;
     }
@@ -1182,7 +1299,7 @@ footer {
     {
 
         .mealDescription2 {
-            width: 50px;
+            width: 90%;
             margin-top: 10px;
             margin-bottom: 10px;
             margin-left: -6px;
@@ -1191,9 +1308,8 @@ footer {
     .price2 {
         font-weight: 900;
         margin-top: 54px;
-        margin-right:0px;
-        margin-left: 40%;
-
+        float:right;
+    
      }
 
         #lapalettedugout {
@@ -1211,20 +1327,53 @@ footer {
             font-size: 30px;
             float:right;
         }
+        .secondaryHeart {
+            position: relative;
+            left: 15px;
+        }
+            
+            
+        
+        .secondaryHeart .fa-regular {
+            background: white;
+            z-index: 1;
+            position:relative;
+            left:-31px;
+        }
+        
+        .secondaryHeart .fa-regular:hover {
+            opacity: 0;
+            
+        
+        }
+        
+        .secondaryHeart i {
+            position: relative;
+            left: -11px;
+            font-size: 20px;
+            top: 25px;
+            float:right;
+        }
+        
+        .secondaryHeart .fa-solid {
+            position:relative;
+            left:-11px;
+        }
+        
 
         .goBack i{
             font-size: 20px;
         }
 
         .mealDescription2 {
-            width: 220px;
+            width: 90%;
             margin-top: 10px;
             margin-bottom: 10px;
             margin-left: -6px;
     }
 
     footer {
-        width:96.5%;
+        width:100%;
     }
 
     .circleCheck2 {
@@ -1247,11 +1396,24 @@ footer {
         }
     
     
+        .mealCard2 h3 {
+            margin: 7px 0 10px 15px;
+        }
         
     
     /*final value with the elemnt declencheur and the
     property */
     .mealCard:hover .circleCheck2 { 
+        transition: all 0.3s ease-out;
+        width: 102px;
+        transform: rotate (360)  ;
+        transform: translateX(8px);
+        color:red;
+        transform-origin: 50% 0;
+       
+    }
+
+    .mealCard2:hover .circleCheck2 { 
         transition: all 0.3s ease-out;
         width: 102px;
         transform: rotate (360)  ;
@@ -1281,6 +1443,40 @@ footer {
         height: 100%;
  
     }
+    .secondaryHeart {
+        position: relative;
+        left: 11px;
+        font-size:30px;
+    }
+        
+        
+    
+    .secondaryHeart .fa-regular {
+        background: white;
+        z-index: 1;
+        position:relative;
+        left:-31px;
+    }
+    
+    .secondaryHeart .fa-regular:hover {
+        opacity: 0;
+        
+    
+    }
+    
+    .secondaryHeart i {
+        position: relative;
+        left: -11px;
+        font-size: 20px;
+        top: 25px;
+        float:right;
+    }
+    
+    .secondaryHeart .fa-solid {
+        position:relative;
+        left:-11px;
+    }
+    
 
     #lapalettedugout {
         width: 100%;
@@ -1341,6 +1537,15 @@ main h2 {
         flex-direction: row;
         flex-wrap:wrap;
         gap: 10%;
+        
+    }
+
+    .mealCard2 {
+        display: flex;
+        width: 300px; 
+        flex-direction: row;
+        flex-wrap:wrap;
+   
     }
 
     .card a {
@@ -1369,7 +1574,7 @@ main h2 {
 }
 
 .mealDescription {
-    width: 260px;
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: -6px;
@@ -1384,7 +1589,7 @@ main h2 {
 
 
 .mealDescription2 {
-    width: 520px;
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: -6px;
@@ -1403,6 +1608,10 @@ main h2 {
     font-weight:900;
 }
 
+.mealCard2 h3 {
+    font-weight:900;
+}
+
  
 
  .underlineBox {
@@ -1414,8 +1623,8 @@ main h2 {
 .price2  {
         font-weight: 900;
         margin-top: 54px;
-        margin-right:auto;
-        margin-left:15%;
+        float:right;
+    
         
     }
 
@@ -1439,6 +1648,11 @@ main h2 {
         margin: 7px 0 10px 15px;
     }
 
+    .mealCard2 h3 {
+        margin: 7px 0 10px 15px;
+    }
+
+
 
     
 
@@ -1453,13 +1667,23 @@ property */
     transform-origin: 50% 0;
    
 }
+
+.mealCard2:hover .circleCheck2 { 
+    transition: all 0.3s ease-out;
+    width: 232px;
+    transform: rotate (360)  ;
+    transform: translateX(-80px);
+    color:red;
+    transform-origin: 50% 0;
+   
+}
  
  }
 
 @media (min-width:875px )and (max-width:1281px ) {
 
     .mealDescription2 {
-        width: 220px;
+        width: 90%;
 }
 
 .instructions {
@@ -1547,6 +1771,15 @@ property */
         transform-origin: 50% 0;
        
     }
+    .mealCard2 .circleCheck2 { 
+        transition: all 0.3s ease-out;
+        width: 0px;
+        transform: rotate (360)  ;
+        transform: translateX(25px);
+        color:red;
+        transform-origin: 50% 0;
+       
+    }
 
 
     .mealCard:hover .circleCheck2 { 
@@ -1559,11 +1792,21 @@ property */
        
     }
 
+    .mealCard2:hover .circleCheck2 { 
+        transition: all 0.3s ease-out;
+        width: 150px;
+        transform: rotate (360)  ;
+        transform: translateX(25px);
+        color:red;
+        transform-origin: 50% 0;
+       
+    }
+
     .price2 {
         font-weight: 900;
         margin-top: 54px;
-        margin-right: 20px;
-        margin-left: 12%;
+        float:right;
+    
     }
 
     
@@ -1577,7 +1820,7 @@ property */
     }
 
     .mealDescription2 {
-        width: 260px;
+        width: 90%;
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: -6px;
@@ -1591,7 +1834,7 @@ property */
     
     
     .mealDescription2{
-        max-width: 192px;
+        width: 90%;
     }
     
     .mealCard {
@@ -1601,9 +1844,22 @@ property */
         flex-wrap:wrap;
         gap: 10%;
     }
+
+    .mealCard2 {
+        display: flex;
+        width: 183px; 
+        flex-direction: column;
+        flex-wrap:wrap;
+
+    }
     
     
     .mealCard h3 {
+        font-weight:900;
+    }
+
+     
+    .mealCard2 h3 {
         font-weight:900;
     }
     
@@ -1640,6 +1896,9 @@ property */
             margin: 7px 0 10px 15px;
         }
     
+        .mealCard2 h3 {
+            margin: 7px 0 10px 15px;
+        }
     
         
     
@@ -1655,6 +1914,17 @@ property */
        
     }
 
+    .mealCard2:hover .circleCheck2 { 
+        transition: all 0.3s ease-out;
+        width: 232px;
+        transform: rotate (360)  ;
+        transform: translateX(-30px);
+        color:red;
+        transform-origin: 50% 0;
+       
+    }
+
+
 }
 
 /* bigdesktop */
@@ -1667,6 +1937,20 @@ property */
 
 main {
     width: 100%;
+    position: relative;
+    background-color: #f6f6f6;
+    border-radius: 30px 30px 0px 0px;
+    margin: -35px 0px 0px 1px;
+    padding-bottom: 1px;
+    width: 100%;
+    height: 200%;
+    gap: 40px;
+}
+
+.instructions {
+    width: 97%;
+    display: flex;
+    align-items: center;
 }
     .card {
         display: flex;
@@ -1704,6 +1988,7 @@ main {
         right: -4px;
         top: 100px;
 }
+
 
 
 .card a {
@@ -1748,6 +2033,9 @@ footer {
         margin: 7px 0 10px 15px;
     }
 
+    .mealCard2 h3 {
+        margin: 7px 0 10px 15px;
+    }
 
     
 
@@ -1763,6 +2051,17 @@ property */
    
 }
 
+.mealCard2:hover .circleCheck2 { 
+    transition: all 0.3s ease-out;
+    width: 150px;
+    transform: rotate (360)  ;
+    transform: translateX(-30px);
+    color:red;
+    transform-origin: 50% 0;
+   
+}
+
+
 
 #entrees, #plats, #desserts {
     flex-direction: row;
@@ -1774,7 +2073,7 @@ property */
 }
 
 .mealDescription {
-    width: 260px;
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: -6px;
@@ -1788,7 +2087,7 @@ property */
 
 
 .mealDescription2{
-    max-width: 192px;
+    width: 90%;
 }
 
 .mealCard {
@@ -1799,12 +2098,22 @@ property */
     gap: 10%;
 }
 
+.mealCard2 {
+    display: flex;
+    width: 300px; 
+    flex-direction: column;
+    flex-wrap:wrap;
+
+}
+
 
 .mealCard h3 {
     font-weight:900;
 }
 
- 
+.mealCard2 h3 {
+    font-weight:900;
+}
 
  .underlineBox {
     border-bottom: 4px solid #99E2D0;
@@ -1814,8 +2123,8 @@ property */
 .price2  {
     font-weight: 900;
     margin-top: 54px;
-    margin-right: 20px;
-    margin-left: 20%;
+    float:right;
+    
 
     
     
