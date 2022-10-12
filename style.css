@@ -86,7 +86,7 @@ p {
 }
 
 main h2 {
-    padding-top:20px;
+    padding-left:20px;
 }
 
 body {
@@ -150,6 +150,7 @@ header{
         color:black;
         font-size:30px;
 }
+
 
 .callToAction {
     padding: 30px 20px 30px 20px;
@@ -372,6 +373,7 @@ main{
 .fa-regular {
     background: white;
     z-index: 1;
+    
 }
 
 .heart .fa-regular:hover {
@@ -1072,7 +1074,13 @@ property */
     
     { 
 
-
+        .fa-regular {
+            background: white;
+            z-index: 1;
+            position:relative;
+            left: 21px;
+        }
+    
      
 .secondaryHeart {
     position: relative;
@@ -1125,15 +1133,7 @@ property */
 
 
 
-        .mealDescription2 {
-            flex-basis: 90%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: -6px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-    }
+
         .mealsTitle h1 {
             font-size: 22px;
             height:auto;
@@ -1179,7 +1179,15 @@ property */
     
          }
 
-
+         .mealDescription2 {
+            flex-basis: 90%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: -6px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+    }
         
 /*initial value*/
 .circleCheck {
@@ -1231,7 +1239,7 @@ property */
     }
 
     100%{
-        transform: rotate(180deg);
+        transform:rotate(360deg);;
       
     }
 }
@@ -1243,7 +1251,7 @@ property */
     }
 
     100%{
-        transform: rotate(180deg);
+        transform: rotate(360deg);
       
     }
 }
@@ -1291,8 +1299,17 @@ property */
         position: relative;
         left: 15px;
     }
+    
         
-        
+    .fa-regular {
+        background: white;
+        z-index: 1;
+        position:relative;
+        left: 21px;
+    }
+    
+    
+
     
     .secondaryHeart .fa-regular {
         background: white;
@@ -1368,7 +1385,7 @@ property */
     }
 
     100%{
-        transform: rotate(180deg);
+        transform: rotate(360deg);
       
     }
 }
@@ -1380,7 +1397,7 @@ property */
     }
 
     100%{
-        transform: rotate(180deg);
+        transform: rotate(360deg);
       
     }
 }
@@ -1435,7 +1452,13 @@ footer {
             left: 15px;
         }
             
-            
+        .fa-regular {
+            background: white;
+            z-index: 1;
+            position:relative;
+            left: 21px;
+        }
+        
         
         .secondaryHeart .fa-regular {
             background: white;
@@ -1530,7 +1553,7 @@ footer {
     }
 
     100%{
-        transform: rotate(180deg);
+        transform: rotate(360deg);
       
     }
 }
@@ -1542,7 +1565,7 @@ footer {
     }
 
     100%{
-        transform: rotate(180deg);
+        transform: rotate(360deg);
       
     }
 }
@@ -1639,6 +1662,13 @@ footer {
         left:-11px;
     }
     
+    .fa-regular {
+        background: white;
+        z-index: 1;
+        position:relative;
+        left: 21px;
+    }
+
 
     #lapalettedugout {
         width: 100%;
@@ -1744,10 +1774,8 @@ main h2 {
 }
 
 .mealCard2 {
-    display: flex;
+   
     width: 300px; 
-    flex-direction: row;
-
 
 }
 .mealDescription2 {
@@ -1806,10 +1834,6 @@ main h2 {
         margin: 7px 0 10px 15px;
     }
 
-
-
-
-
 .circleCheck {
     
     display: flex;
@@ -1829,7 +1853,7 @@ main h2 {
 
 .mealCard:hover .circleCheck2 i { 
     transition: all 0.3s ease-out;
-    width:130px;
+    width:30px;
     rotate:(360deg);
     color:white;
     transform-origin: 0% 50%;
@@ -1858,7 +1882,7 @@ main h2 {
 }
 
 100%{
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   
 }
 }
@@ -1870,7 +1894,7 @@ main h2 {
 }
 
 100%{
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   
 }
 }
@@ -1886,12 +1910,7 @@ width:100%;
 
 @media (min-width:876px )and (max-width:1281px ) {
 
-    .mealDescription2 {
-        flex-basis: 90%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-}
+
 
 .instructions {
     width:97%;
@@ -1979,6 +1998,7 @@ width:100%;
         float:right;
         flex-basis: 5%;
         margin-left:auto;
+        margin-right:6px;
     
     }
 
@@ -1992,15 +2012,7 @@ width:100%;
     
     }
 
-    .mealDescription2 {
-        flex-basis: 85%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: -6px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+  
     
     #menu {
         display: flex;
@@ -2020,16 +2032,11 @@ width:100%;
     }
 
     .mealCard2 {
-        display: flex;
         width: 183px; 
         flex-direction: row;
-        flex-wrap:wrap;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        
-        
-
     }
     
     
@@ -2058,20 +2065,7 @@ width:100%;
         width:100%;
     }
 
-    
-        .mealDescription2 {
-            flex-basis: 55%;
-             margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: -6px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            display:flex;
-            flex-direction:column;
-
-            
-        }
+  
     
         .mealCard2 h3 {
             margin: 7px 0 10px 15px;
@@ -2088,77 +2082,82 @@ width:100%;
             white-space: nowrap;
         }
     
-        .circleCheck {
-    
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #99e2d0;
-            color: white;
-            font-size: 25px;
-            padding-top: 10px;  
-            width:0px;   
-            transition: all 0.3s ease-in-out;
-            transition-delay: 400ms;
-            -webkit-animation: 0.4s ease-in-out rotate ;
-            animation: 0.4s ease-in-out rotate ;
-            
-            }
-        
-        .mealCard:hover .circleCheck2 i { 
-            transition: all 0.3s ease-out;
-            width:30px;
-            rotate:(360deg);
-            color:white;
-            transform-origin: 0% 50%;
-            -webkit-animation: 0.4s ease-in-out rotate ;
-            animation: 0.4s ease-in-out rotate ;
-           
-        }
-        
-        .mealCard2:hover .circleCheck2 i { 
-            transition: all 0.3s ease-out;
-            width:30px;
-            rotate:(360deg) 3;
-            color:white;
-            transform-origin: 50% 50%;
-            -webkit-animation: 0.4s ease-in-out rotate forwards;
-            animation: 0.3s ease-in-out rotate ;
-           
-        }
-    
-        
-    
-    @-webkit-keyframes rotate{
-        0% {
-            transform: rotate(0);
-          
-        }
-    
-        100%{
-            transform: rotate(180deg);
-          
-        }
+        .mealDescription2 {
+            flex-basis: 90%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: -6px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
     }
+        
+/*initial value*/
+.circleCheck {
     
-    @keyframes rotate{
-        0% {
-            transform: rotate(0);
-          
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #99e2d0;
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;  
+    width:0px;   
+    transition: all 0.3s ease-in-out;
+    transition-delay: 400ms;
+    -webkit-animation: 0.4s ease-in-out rotate ;
+    animation: 0.4s ease-in-out rotate ;
     
-        100%{
-            transform: rotate(180deg);
-          
-        }
     }
-    
-        .goBack i{
-            font-size: 30px;
-        }
-    footer {
-        width:100%;
+
+/*final value with the elemnt declencheur and the
+property */
+.mealCard:hover .circleCheck2 i { 
+    transition: all 0.3s ease-out;
+    width:130px;
+    rotate:(360deg);
+    color:white;
+    transform-origin: 0% 50%;
+    -webkit-animation: 0.4s ease-in-out rotate ;
+    animation: 0.4s ease-in-out rotate ;
+   
+}
+
+.mealCard2:hover .circleCheck2 i { 
+    transition: all 0.3s ease-out;
+    width:30px;
+    rotate:(360deg) 3;
+    color:white;
+    transform-origin: 50% 50%;
+    -webkit-animation: 0.4s ease-in-out rotate forwards;
+    animation: 0.3s ease-in-out rotate ;
+   
+}
+
+
+@-webkit-keyframes rotate{
+    0% {
+        transform: rotate(0);
+      
     }
+
+    100%{
+        transform: rotate(360deg);
+      
+    }
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate(0);
+      
+    }
+
+    100%{
+        transform: rotate(360deg);
+      
+    }
+}
 
 }
 
