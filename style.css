@@ -16,7 +16,7 @@
 
 
 .loaderWrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -95,7 +95,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-    height: 194px;
+
 }
 
 
@@ -574,7 +574,7 @@ footer {
     padding: 15px;
     width: 96%;
     margin: 0 -8px 0 -8px;
-    margin-top: 5%;   
+    margin-top: 0%;   
     
 }
 
