@@ -1,188 +1,204 @@
 <!DOCTYPE html> 
 <html lang="en">
-<head>
     <head>
-        <title>menuLaPaletteDuGout</title>
+        <title>menuLaNoteEnchantee</title>
         <meta charset ="utf-8"/>
          <link rel="stylesheet" href="normalize.css">
+         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1 user scalable=no">
         <script src="https://kit.fontawesome.com/98ab6a906d.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">   
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    </head>
-<body>
-   <header>
-       <!--banner-->
-       <div id="banner">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">    
+
+</head>
+
+
+<header>
+     <body>
+    <!--spinner-->
+    <div class="loaderWrapper">
+        <div class="spinner">
+           <div></div>
+           <div></div>
+        </div>
+     </div>
+     
+    <!--banner-->
+        <div id="banner">
         <a href="index.html" class="goBack">
-                <i class="fa-sharp fa-solid fa-arrow-left"></i>
+            <i class="fa-sharp fa-solid fa-arrow-left"></i>
         </a>
-           
-               <img id="imgLogoSecond" src="./images/logo/ohmyfood@2x.svg" alt="photo logo oh my food"/> 
-        
+            <img id="imgLogoSecond" src="./images/logo/ohmyfood@2x.svg" 
+            alt="photo logo oh my food"/> 
         </div>
-       <div class="backgroundImage">
-            <img id=lanoteenchantee src="images/restaurants/laNoteEnchantee.jpg" alt="photo la la note enchantee">
-        </div>
-    </header>
-   <main>
+    </div>
+    <div class="backgroundImage">
+    <img id="lanoteenchantee" src="images/restaurants/laNoteEnchantee.jpg" 
+    alt="photo la palette du gout"/>
+    </div>
+
+</header>
+<main>
     <div class="mealsTitle">
-        <h1>La note enchantée</h1>
-        <div class="secondaryHeart">
+        <h1>La note enchantee</h1>
+    <div class="secondaryHeart">
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-heart"></i>
-        </div>
     </div>
     </div>
+<section id="menu">
     <section id="entrees">
         <div class="underlineBox">
         <h2>Entrées</h2>
         </div>
-           <div class="mealCard">
-               <div class=" mealDescription2">
-                   <h3>Ravioles de foie gras</h3> 
-                   <p>Accompagnés de leur crème à la truffe</p>
-               </div>
-               <div class="price2">
-                   <p>25€</p>
-               </div>
-               <div class="circleCheck">
-                    <i class="fa-sharp fa-solid fa-circle-check"></i>
-               </div>
-           </div>
-           <div class="mealCard">
-               <div class="mealDescription2">
-                   <h3>Caviar osciètre</h3> 
-                   <p>Sur blini à la farine de blé noir</p>
-               </div>
-               <div class="price2">
-                   35€
-               </div>
-               <div class="circleCheck">
-                   <i class="fa-sharp fa-solid fa-circle-check"></i>
-               </div>
-           </div>
-           <div class="mealCard">
-               <div class=" mealDescription2">
-                   <h3>Homard et espuma de potiron</h3>
-                   <p>Mariné aux zestes d'orange</p>
-               </div>
-               <div class="price2">
-                   20€
-               </div>
-               <div class="circleCheck">
-                   <i class="fa-sharp fa-solid fa-circle-check"></i>
-               </div>           
-           </div>
-           <div class="mealCard">
-               <div class=" mealDescription2">
-                   <h3>Foie gras de canard cuit entier</h3>
-                   <p>Confiture de figue et pain toasté</p>
-               </div>
-               <div class="price2">
-                   35€
-               </div>
-               <div class="circleCheck">
-                   <i class="fa-sharp fa-solid fa-circle-check"></i>
-               </div>           
-           </div>
-        </section>
-       <section id="plats">
-        <div class="underlineBox">
-        <h2>Plats</h2>
+        <div class="mealCard2">
+            <div class=" mealDescription2"> 
+               <h3>Ravioles de foie gras</h3> 
+                <p>Accompagnés de leur crème à la truffe</p>
+            </div>
+            <div class="price2">
+                25€ 
+            </div>
+            <div class="circleCheck2">
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
         </div>
-           <div class="mealCard">
-               <div class=" mealDescription2">
-                   <h3>Noix de coquilles Saint-Jacques</h3>
-                   <p>Sur lit de purée de céleri-rave</p>
-               </div>
-               <div class="price2">
-                   40€
-               </div>
-               <div class="circleCheck">
-                <i class="fa-sharp fa-solid fa-circle-check"></i>
-            </div> 
-        </div>
-           <div class="mealCard">
-               <div class=" mealDescription2">
-                   <h3>Langoustine poêlée</h3>
-                   <p>Purée de patate douce</p>
-               </div>
-               <div class="price2">
-                   35€
-               </div>
-               <div class="circleCheck">
+        <div class="mealCard2">
+            <div class="mealDescription2">
+                <h3>Foie gras de canard mi-cuit</h3>
+                <p>Sur blini à la farine de blé noir</p>
+            </div>
+            <div class="price2">
+                35€
+            </div>
+            <div class="circleCheck2">
                 <i class="fa-sharp fa-solid fa-circle-check"></i>
             </div>
-        </div>  
-           <div class="mealCard">
-               <div class=" mealDescription2">
-                   <h3>Mijoté de queue de boeuf</h3> 
-                   <p>Et riz sauvage aux zestes de citron</p>
-               </div>
-               <div class="price2">
-                   44€
-               </div>
-               <div class="circleCheck">
-                   <i class="fa-sharp fa-solid fa-circle-check"></i>
-               </div>
-           </div>
-       </section>
-   <section id="desserts">
+        </div>
+        <div class="mealCard2">
+            <div class=" mealDescription2">
+                <h3>Homard et espuma de potiron</h3>
+                <p>Mariné aux zestes d'orange</p>
+            </div>
+            <div class="price2">
+                20€
+            </div>
+            <div class="circleCheck2">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+        <div class="mealCard2">
+            <div class=" mealDescription2">
+                <h3>Foie gras de canard cuit entier</h3>
+                <p>Confiture de figue et pain toasté</p>
+            </div>
+            <div class="price2">
+                35€
+            </div>
+            <div class="circleCheck2">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="plats">
+        <div class="underlineBox">
+            <h2>Plats</h2>
+        </div>
+        <div class="mealCard2">
+            <div class=" mealDescription2">
+                <h3>Noix de coquilles Saint-Jacques</h3>
+                <p>Sur lit de purée de céleri-rave</p>
+            </div>
+            <div class="price2">
+                40€
+            </div>
+            <div class="circleCheck2">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+        <div class="mealCard2">
+            <div class=" mealDescription2">
+                <h3>Langoustine poêlée </h3>
+                <p>Purée de patate douce</p>
+            </div>
+            <div class="price2">
+                35€
+            </div>
+            <div class="circleCheck2">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+        <div class="mealCard2">
+            <div class=" mealDescription2">
+                <h3>Mijoté de queue de boeuf</h3>
+                <p>Et riz sauvage aux zestes de citron</p>
+            </div>
+            <div class="price2">
+                44€
+            </div>
+            <div class="circleCheck2">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+    </section>
+
+<section id="desserts">
     <div class="underlineBox">
     <h2>Desserts</h2>
     </div>
-        <div class="mealCard">
+        <div class="mealCard2">
             <div class="mealDescription2">
-               <h3>Macaron noisette et chocolat</h3>
-               <p>Glace au caramel brun et sel de Guérande</p>
+                <h3>Macaron noisette et chocolat</h3>
+                <p>Glace au caramel brun et sel de Guérande</p>
             </div>
-           <div class="price2">
-               18€
-           </div>
-           <div class="circleCheck">
-               <i class="fa-sharp fa-solid fa-circle-check"></i>
-           </div>
+            <div class="price2">
+                18€
+            </div>
+            <div class="circleCheck2" >
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
         </div>
-      
-        <div class="mealCard">
+        <div class="mealCard2">
             <div class="mealDescription2">
-               <h3>Baba au rhum revisité</h3> 
-               <p>Avec son coulis de citron</p>
-           </div>
-           <div class="price2">
-               22€
-           </div>
-           <div class="circleCheck">
-               <i class="fa-sharp fa-solid fa-circle-check"></i>
-           </div>
+                <h3>Baba au rhum revisité </h3> 
+                <p>Avec son coulis de citron</p>
+            </div>
+            <div class="price2">
+                22€
+            </div>
+            <div class="circleCheck2">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
         </div>
-        <div class="mealCard">  
+        <div class="mealCard2">
             <div class="mealDescription2">
-               <h3>Tarte au citron meringuée</h3> 
-               <p>Déstructurée</p>    
-           </div>
-           <div class="price2">
-               23€
-           </div>
-           <div class="circleCheck">
-               <i class="fa-sharp fa-solid fa-circle-check"></i>
-           </div>
+                <h3>Tarte au citron meringuée</h3> 
+                <p>Déstructurée</p>
+            </div>
+            <div class="price2">
+                23€</p>
+            </div>
+            <div class="circleCheck2">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
         </div>
-        </div>
-           <button class="btn__commander">
-               <p>Commander</p>
-           </button>
-           
+    </section>
 </section>
+        <button class="btn__commander">
+            <p>Commander</p>
+        </button>
+
+
 
 
 <footer>

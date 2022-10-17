@@ -1,13 +1,15 @@
 <!DOCTYPE html> 
 <html lang="en">
     <head>
-        <title>menuLaPaletteDuGout</title>
+        <title>menuLeDeliceDesSens</title>
         <meta charset ="utf-8"/>
          <link rel="stylesheet" href="normalize.css">
+         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1 user scalable=no">
         <script src="https://kit.fontawesome.com/98ab6a906d.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,120 +17,134 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">   
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">   
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">    
 
 </head>
-<body>
-   <header>
-       <!--banner-->
-       <div id="banner">
+
+
+<header>
+     <body>
+    <!--spinner-->
+    <div class="loaderWrapper">
+        <div class="spinner">
+           <div></div>
+           <div></div>
+        </div>
+     </div>
+     
+    <!--banner-->
+        <div id="banner">
         <a href="index.html" class="goBack">
             <i class="fa-sharp fa-solid fa-arrow-left"></i>
         </a>
-         
-               <img id="imgLogoSecond"src="./images/logo/ohmyfood@2x.svg" alt="photo logo oh my food"/> 
-         
-        </div>
-       <div class="backgroundImage">
-            <img id="ledelicedessens" src="images/restaurants/leDeliceDesSens.jpg" alt="photo le delice des sens">
-        </div>
-    </header>
-   <main>
-    <div class="mealsTitle">
-        <h1>Le Delice des sens</h1>
-        <div class="secondaryHeart">
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-heart"></i>
+            <img id="imgLogoSecond" src="./images/logo/ohmyfood@2x.svg" 
+            alt="photo logo oh my food"/> 
         </div>
     </div>
+    <div class="backgroundImage">
+    <img id="lapalettedugout" src="images/restaurants/leDeliceDesSens.jpg" 
+    alt="photo la palette du gout"/>
+    </div>
+
+</header>
+<main>
+    <div class="mealsTitle">
+        <h1>Le délice des sens</h1>
+    <div class="secondaryHeart">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    </div>
+<section id="menu">
     <section id="entrees">
         <div class="underlineBox">
         <h2>Entrées</h2>
         </div>
-        <div class="mealCard">
-            <div class=" mealDescription2">
-                <h3>Tartare de thon</h3>
+        <div class="mealCard2">
+            <div class=" mealDescription2"> 
+               <h3>Tartare de thon</h3> 
                 <p>Assaisonné au yuzu</p>
-             </div>
-            <div class="price2">
-                25€
             </div>
-            <div class="circleCheck">
-                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            <div class="price2">
+                25€ 
+            </div>
+            <div class="circleCheck2">
+            <i class="fa-sharp fa-solid fa-circle-check"></i>
             </div>
         </div>
-        <div class="mealCard">
-            <div class=" mealDescription2">
-                <h3>Bouchée de homard croustillant</h3> 
+        <div class="mealCard2">
+            <div class="mealDescription2">
+                <h3>Bouchée de homard croustillant</h3>
                 <p>Et sa farandole de petits légumes</p>
             </div>
             <div class="price2">
                 35€
             </div>
-            <div class="circleCheck">
+            <div class="circleCheck2">
                 <i class="fa-sharp fa-solid fa-circle-check"></i>
             </div>
         </div>
-        <div class="mealCard">
+        <div class="mealCard2">
             <div class=" mealDescription2">
-                <h3>Velouté de cèpes</h3> 
+                <h3>Velouté de cèpes </h3>
                 <p>Aux truffes</p>
             </div>
             <div class="price2">
                 20€
             </div>
-            <div class="circleCheck">
+            <div class="circleCheck2">
                 <i class="fa-sharp fa-solid fa-circle-check"></i>
             </div>
         </div>
-
-    <section id="plats">
-            <div class="underlineBox">
-                <h2>Plats</h2>
-            </div>
-            <div class="mealCard">
-                <div class=" mealDescription2">
-                    <h3>Poulet rôti aux herbes de Provence</h3> 
-                    <p>Et sa crème de truffe</p>
-                </div>
-                <div class="price2">
-                    40€
-                </div>
-                <div class="circleCheck">
-                    <i class="fa-sharp fa-solid fa-circle-check"></i>
-                </div>
-            </div>
-            <div class="mealCard">
-                 <div class="mealDescription2">
-                    <h3>Langouste rôtie</h3> 
-                    <p>Et ses légumes de saison</p>
-                </div>
-                <div class="price2">
-                    35€
-                </div>
-                <div class="circleCheck">
-                    <i class="fa-sharp fa-solid fa-circle-check"></i>
-                </div>
-            </div>
-            <div class="mealCard">
-                <div class="mealDescription2">
-                    <h3>Côte de boeuf Angus</h3> 
-                    <p>Et sa purée de panais</p>
-                </div>
-                <div class="price2"> 
-                    44€
-                </div>
-                <div class="circleCheck">
-                    <i class="fa-sharp fa-solid fa-circle-check"></i>
-                </div>
-            </div>
     </section>
 
-    <section id="desserts">
+    <section id="plats">
         <div class="underlineBox">
-            <h2>Desserts</h2>
+            <h2>Plats</h2>
         </div>
-        <div class="mealCard">
+        <div class="mealCard2">
+            <div class=" mealDescription2">
+                <h3>Poulet rôti aux herbes de Provence </h3>
+                <p>Et sa crème de truffe</p>
+            </div>
+            <div class="price2">
+                40€
+            </div>
+            <div class="circleCheck2">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+        <div class="mealCard2">
+            <div class=" mealDescription2">
+                <h3>Langouste rôtie </h3>
+                <p>Et ses légumes de saison</p>
+            </div>
+            <div class="price2">
+                35€
+            </div>
+            <div class="circleCheck2">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+        <div class="mealCard2">
+            <div class=" mealDescription2">
+                <h3>Côte de boeuf Angus </h3>
+                <p>Et sa purée de panais</p>
+            </div>
+            <div class="price2">
+                44€
+            </div>
+            <div class="circleCheck2">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+    </section>
+
+<section id="desserts">
+    <div class="underlineBox">
+    <h2>Desserts</h2>
+    </div>
+        <div class="mealCard2">
             <div class="mealDescription2">
                 <h3>Farandole de desserts</h3>
                 <p>Du chef</p>
@@ -136,39 +152,42 @@
             <div class="price2">
                 18€
             </div>
-            <div class="circleCheck">
+            <div class="circleCheck2" >
                 <i class="fa-sharp fa-solid fa-circle-check"></i>
             </div>
         </div>
-        <div class="mealCard">
+        <div class="mealCard2">
             <div class="mealDescription2">
-                <h3>Crème brulée</h3> 
+                <h3>Crème brulée </h3> 
                 <p>Revisitée</p>
             </div>
             <div class="price2">
                 22€
             </div>
-            <div class="circleCheck">
+            <div class="circleCheck2">
                 <i class="fa-sharp fa-solid fa-circle-check"></i>
             </div>
         </div>
-        <div class="mealCard">
+        <div class="mealCard2">
             <div class="mealDescription2">
-                <h3>Tiramisu</h3> 
-                <p>À la noisette</p>
+                <h3>Tiramisu </h3> 
+                <p> À la noisette</p>
             </div>
-        <div class="price2">
-                23€
+            <div class="price2">
+                23€</p>
+            </div>
+            <div class="circleCheck2">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
         </div>
-        <div class="circleCheck">
-            <i class="fa-sharp fa-solid fa-circle-check"></i>
-        </div>
-        </div>
-    <button class="btn__commander">
-        <p>Commander</p>
-    </button>
+    </section>
 </section>
-</main>
+        <button class="btn__commander">
+            <p>Commander</p>
+        </button>
+
+
+
 
 <footer>
     <div id="footerText">
@@ -189,6 +208,6 @@
        </a>
     </div>
  </footer>
-
+</main>
 </body>
 </html>
