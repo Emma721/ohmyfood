@@ -461,7 +461,7 @@ main{
 }
 
 .fa-regular {
-    background: white;
+    background: #f6f6f6;
     z-index: 1;
     
 }
@@ -505,7 +505,7 @@ main{
         }
    
         .fa-regular {
-            background: white;
+            background: #f6f6f6;
             z-index: 1;
         }
 
@@ -517,7 +517,7 @@ main{
 
 
 
-    wanted to change the heart that is in all secondary pages
+    /*wanted to change the heart that is in all secondary pages*/
 .secondaryheart, #secondaryHeartRegular{
         margin: 5%;
         position:absolute;
@@ -1406,7 +1406,7 @@ property */
     
         
     .fa-regular {
-        background: white;
+        background: #f6f6f6;
         z-index: 1;
         position:relative;
         left: 21px;
@@ -1565,7 +1565,7 @@ footer {
         
         
         .secondaryHeart .fa-regular {
-            background: white;
+            background: #f6f6f6;
             z-index: 1;
             position:relative;
             left:-41px;
@@ -1767,7 +1767,7 @@ footer {
     }
     
     .fa-regular {
-        background: white;
+        background: #f6f6f6;
         z-index: 1;
         position:relative;
         left: 21px;
